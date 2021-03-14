@@ -3,7 +3,12 @@ const { expect } = require("chai")
 
 const serverURL = "http://127.0.0.1:8000"
 const request = require("supertest")(serverURL)
-const { exchangeRates } = require("exchange-rates-api")
+
+describe("Test", function () {
+  it("should return true", function () {
+    expect("test").to.be.a("number")
+  })
+})
 
 describe("amount with specific currency, and show converted values in all other currencies", function () {
   it("Should return crrency as number", async function () {

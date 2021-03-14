@@ -1,0 +1,26 @@
+{
+  "name": "currency-exchange-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "mocha"
+  },
+  "author": "Gino Too",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "date-fns": "^2.19.0",
+    "exchange-rates-api": "^1.0.2",
+    "express": "^4.14.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-json": "^1.0.0",
+    "mocha": "^8.3.2",
+    "nodemon": "^1.19.4",
+    "supertest": "^6.1.3"
+  }
+}

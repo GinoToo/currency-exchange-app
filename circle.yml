@@ -16,9 +16,12 @@ jobs:
           command: |
             npm run start
           name: Start Server
+      - run:
+          command: |
+            npm run test
+          name: Run Test
 
 workflows:
   main:
     jobs:
       - start-server
-      - node/test

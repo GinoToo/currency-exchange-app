@@ -1,4 +1,6 @@
 # circle.yml
+orbs: # declare what orbs we are going to use
+  node: circleci/node@2.0.2
 version: 2.1
 jobs:
   start-server:

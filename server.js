@@ -5,7 +5,7 @@ const app = express()
 
 app.use(bodyParser.urlencoded({ extended: true }))
 
-const port = 8000
+const port = 3000
 
 require("./app/routes")(app, {})
 app.listen(port, () => {

@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "pm2": "pm2 start processes.json --no-daemon",
     "dev": "nodemon server.js",
     "test": "mocha"
   },

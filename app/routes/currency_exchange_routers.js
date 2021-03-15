@@ -6,7 +6,7 @@ const { format, parse, isValid, addYears } = require("date-fns")
 
 module.exports = function (app, db) {
   app.get("/conversion", async (req, res) => {
-    console.log(req.query)
+    //console.log(req.query)
     let base = req.query.base
     let amount = req.query.amount
 

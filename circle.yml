@@ -21,10 +21,10 @@ jobs:
       - image: circleci/node:latest
     steps:
       - checkout
-       - run:
-          command: |
-            npm install
-          name: Install
+      - run:
+        command: |
+          npm install
+        name: Install
       - run:
           command: |
             npm run test

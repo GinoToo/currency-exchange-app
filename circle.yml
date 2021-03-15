@@ -14,11 +14,7 @@ jobs:
           name: Install
       - run:
           command: |
-            docker build -t gino/currency-exchange-app .
-          name: docker build
-      - run:
-          command: |
-            docker run -p 49160:3000 -d gino/currency-exchange-app
+            docker run -p 49160:3000 -d gino/currency-exchange-app; sleep 20
           name: docker run
       - run:
           command: |

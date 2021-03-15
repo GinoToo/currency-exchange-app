@@ -14,24 +14,18 @@ jobs:
           name: Install
       - run:
           command: |
-            npm run start
-          name: Start Server
-  test:
-    docker:
-      - image: circleci/node:latest
-    steps:
-      - checkout
+            docker build -t gino/currency-exchange-app .
+          name: docker build
       - run:
-        command: |
-          npm install
-        name: Test install
+          command: |
+            docker run -p 49160:3000 -d gino/currency-exchange-app
+          name: docker run
       - run:
           command: |
             npm run test
-          name: Run test
+          name: Start test
 
 workflows:
   main:
     jobs:
       - start-server
-      - test

@@ -24,11 +24,11 @@ jobs:
       - run:
         command: |
           npm install
-        name: Install
+        name: Test install
       - run:
           command: |
             npm run test
-          name: Run Test
+          name: Run test
 
 workflows:
   main:

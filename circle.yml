@@ -18,6 +18,10 @@ jobs:
           name: install pm2
       - run:
           command: |
+            npm run pm2
+          name: rum pm2
+      - run:
+          command: |
             npm run test
           name: Start test
 

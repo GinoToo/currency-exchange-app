@@ -30,7 +30,7 @@ GET /conversion?base=USD&amount=100
 Get daily percentage change for a time period.
 
 ```http
-GET /history?from=2021-01-01&to=2021-01-12&base=USD
+GET /history?from=2021-01-01&to=2021-01-31&base=USD
 ```
 
 
